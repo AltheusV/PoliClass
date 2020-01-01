@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: ffffff;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.poli.view.EdicaoAvisoController">
+   <children>
+      <ImageView fitHeight="302.0" fitWidth="264.0" layoutX="35.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="br/com/poli/resources/PC-LOGO1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="69.0" fitWidth="116.0" layoutX="27.0" layoutY="517.0">
+         <image>
+            <Image url="br/com/poli/resources/upe-logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="76.0" fitWidth="116.0" layoutX="659.0" layoutY="510.0">
+         <image>
+            <Image url="br/com/poli/resources/logoPOLI.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="307.0" layoutY="517.0" mnemonicParsing="false" onAction="#deletar" prefHeight="39.0" prefWidth="100.0" style="-fx-text-fill: #FF0000;" text="Deletar" />
+      <Button layoutX="423.0" layoutY="517.0" mnemonicParsing="false" onAction="#voltarParaEdicao" prefHeight="39.0" prefWidth="100.0" text="Voltar" />
+      <Button layoutX="538.0" layoutY="517.0" mnemonicParsing="false" onAction="#editar" prefHeight="39.0" prefWidth="100.0" text="Editar" />
+      <ListView fx:id="resultadoPesquisa" layoutX="363.0" layoutY="168.0" onMouseClicked="#selecionarAviso" prefHeight="214.0" prefWidth="406.0" />
+      <Label layoutX="466.0" layoutY="117.0" prefHeight="35.0" prefWidth="199.0" text="Selecione o aviso:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="novoAviso" layoutX="363.0" layoutY="410.0" prefHeight="35.0" prefWidth="406.0" />
+   </children>
+</AnchorPane>

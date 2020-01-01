@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: ffffff;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.poli.view.CadastroAlunoController">
+   <children>
+      <ImageView fitHeight="302.0" fitWidth="264.0" layoutX="35.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="br/com/poli/resources/PC-LOGO1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="69.0" fitWidth="116.0" layoutX="27.0" layoutY="517.0">
+         <image>
+            <Image url="br/com/poli/resources/upe-logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="76.0" fitWidth="116.0" layoutX="659.0" layoutY="510.0">
+         <image>
+            <Image url="br/com/poli/resources/logoPOLI.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="410.0" layoutY="46.0" prefHeight="105.0" prefWidth="311.0" text="Preencha as informações:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="360.0" layoutY="127.0" text="Nome do aluno:" />
+      <TextField fx:id="nomeAluno" layoutX="360.0" layoutY="157.0" prefHeight="31.0" prefWidth="325.0" promptText="JOSE ANTONIO DA SILVA" />
+      <TextField fx:id="cpfAluno" layoutX="360.0" layoutY="237.0" prefHeight="31.0" prefWidth="116.0" promptText="00000000000" />
+      <Label layoutX="360.0" layoutY="207.0" text="CPF:" />
+      <TextField fx:id="matriculaAluno" layoutX="520.0" layoutY="237.0" prefHeight="31.0" prefWidth="92.0" promptText="000000000" />
+      <Label layoutX="520.0" layoutY="207.0" prefHeight="21.0" prefWidth="149.0" text="Número de matrícula:" />
+      <Label layoutX="360.0" layoutY="287.0" text="Motivo da reserva:" />
+      <TextField fx:id="motivoReserva" layoutX="358.0" layoutY="317.0" prefHeight="31.0" prefWidth="325.0" promptText="MONITORIA, GRUPO DE ESTUDO.. ETC" />
+      <Button layoutX="360.0" layoutY="478.0" mnemonicParsing="false" onAction="#voltarParaCadastro" prefHeight="39.0" prefWidth="134.0" text="Voltar" />
+      <Button layoutX="511.0" layoutY="478.0" mnemonicParsing="false" onAction="#cadastrar" prefHeight="39.0" prefWidth="134.0" text="Cadastrar" />
+      <Label fx:id="mensagem" alignment="TOP_CENTER" layoutX="363.0" layoutY="385.0" prefHeight="47.0" prefWidth="406.0" textFill="RED">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnNovoCadastro" layoutX="511.0" layoutY="478.0" mnemonicParsing="false" onAction="#novoCadastro" prefHeight="39.0" prefWidth="134.0" text="Novo Cadastro" />
+   </children>
+</AnchorPane>

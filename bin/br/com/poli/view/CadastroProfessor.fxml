@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: ffffff;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.poli.view.CadastroProfessorController">
+   <children>
+      <ImageView fitHeight="302.0" fitWidth="264.0" layoutX="35.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="br/com/poli/resources/PC-LOGO1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="69.0" fitWidth="116.0" layoutX="27.0" layoutY="517.0">
+         <image>
+            <Image url="br/com/poli/resources/upe-logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="76.0" fitWidth="116.0" layoutX="659.0" layoutY="510.0">
+         <image>
+            <Image url="br/com/poli/resources/logoPOLI.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="410.0" layoutY="46.0" prefHeight="105.0" prefWidth="311.0" text="Preencha as informações:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="cadeira1" layoutX="417.0" layoutY="242.0" prefHeight="31.0" prefWidth="254.0" promptText="ALGEBRA LINEAR" />
+      <TextField fx:id="codigo1" layoutX="682.0" layoutY="242.0" prefHeight="31.0" prefWidth="102.0" promptText="MAT00001" />
+      <TextField fx:id="turma1" layoutX="360.0" layoutY="242.0" prefHeight="31.0" prefWidth="46.0" promptText="AM" />
+      <TextField fx:id="nomeProfessor" layoutX="360.0" layoutY="157.0" prefHeight="31.0" prefWidth="325.0" promptText="JOSE PEREIRA DA SILVA" />
+      <Label layoutX="360.0" layoutY="127.0" prefHeight="21.0" prefWidth="134.0" text="Nome do professor:" />
+      <Label layoutX="687.0" layoutY="127.0" prefHeight="21.0" prefWidth="110.0" text="Qtd de cadeiras:" />
+      <Label layoutX="473.0" layoutY="208.0" prefHeight="21.0" prefWidth="134.0" text="Cadeira lecionada:" />
+      <Label layoutX="360.0" layoutY="208.0" text="Turma:" />
+      <Label layoutX="666.0" layoutY="208.0" prefHeight="21.0" prefWidth="134.0" text="Código da cadeira:" />
+      <TextField fx:id="turma2" layoutX="360.0" layoutY="282.0" prefHeight="31.0" prefWidth="46.0" promptText="BM" />
+      <TextField fx:id="turma4" layoutX="360.0" layoutY="362.0" prefHeight="31.0" prefWidth="46.0" promptText="AM" />
+      <TextField fx:id="turma3" layoutX="360.0" layoutY="322.0" prefHeight="31.0" prefWidth="46.0" promptText="CM" />
+      <TextField fx:id="turma5" layoutX="360.0" layoutY="402.0" prefHeight="31.0" prefWidth="46.0" promptText="FM" />
+      <TextField fx:id="cadeira2" layoutX="417.0" layoutY="282.0" prefHeight="31.0" prefWidth="254.0" promptText="CALCULO NUMERICO" />
+      <TextField fx:id="cadeira3" layoutX="417.0" layoutY="322.0" prefHeight="31.0" prefWidth="254.0" promptText="CIENCIAS DOS MATERIAIS" />
+      <TextField fx:id="cadeira4" layoutX="418.0" layoutY="362.0" prefHeight="31.0" prefWidth="254.0" promptText="ELETRICIDADE APLICADA" />
+      <TextField fx:id="cadeira5" layoutX="417.0" layoutY="402.0" prefHeight="31.0" prefWidth="254.0" promptText="FISICA 1" />
+      <TextField fx:id="codigo2" layoutX="682.0" layoutY="282.0" prefHeight="31.0" prefWidth="102.0" promptText="CCMP0096" />
+      <TextField fx:id="codigo3" layoutX="682.0" layoutY="322.0" prefHeight="31.0" prefWidth="102.0" promptText="CCMP0097" />
+      <TextField fx:id="codigo4" layoutX="682.0" layoutY="362.0" prefHeight="31.0" prefWidth="102.0" promptText="FISC0016" />
+      <TextField fx:id="codigo5" layoutX="682.0" layoutY="402.0" prefHeight="31.0" prefWidth="102.0" promptText="FISC0011" />
+      <Button layoutX="511.0" layoutY="478.0" mnemonicParsing="false" onAction="#cadastrar" prefHeight="39.0" prefWidth="134.0" text="Cadastrar" />
+      <Button layoutX="360.0" layoutY="478.0" mnemonicParsing="false" onAction="#voltarParaCadastro" prefHeight="39.0" prefWidth="134.0" text="Voltar" />
+      <ComboBox fx:id="quantidadeDeCadeiras" layoutX="715.0" layoutY="158.0" onAction="#selecionarQuantidade" prefHeight="31.0" prefWidth="61.0" />
+      <Button fx:id="btnNovoCadastro" layoutX="511.0" layoutY="478.0" mnemonicParsing="false" onAction="#novoCadastro" prefHeight="39.0" prefWidth="134.0" text="Novo Cadastro" />
+      <Label fx:id="mensagem" alignment="TOP_CENTER" layoutX="363.0" layoutY="299.0" prefHeight="47.0" prefWidth="406.0" textFill="RED">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
